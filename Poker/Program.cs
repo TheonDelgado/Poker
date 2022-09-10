@@ -27,8 +27,22 @@ namespace Poker
         {
             Console.Clear();
 
+            var player = new Player();
+            int currentBet = 0;
+
             Console.WriteLine("Place a bet:");
-            
+            currentBet = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Current bet is " + currentBet);
+            Console.WriteLine("Press 'Enter' to get your hand");
+
+            ConsoleKeyInfo consoleKey = Console.ReadKey();
+            if(consoleKey.Key == ConsoleKey.Enter)
+            {
+                Console.Clear();
+
+                Console.WriteLine($"Dealers cards are ");
+                Console.WriteLine($"Your cards are ");
+            }
 
 
         }
