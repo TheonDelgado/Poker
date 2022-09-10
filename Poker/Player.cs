@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace Poker
 {
-    public class Dealer
+    public class Player
     {
-        
+        public List<Card> Cards { get; set; }
+        public int Chips { get; set; }
     }
 }

@@ -7,12 +7,7 @@ namespace Poker
 {
     public class Card
     {
-        public int Number { get; set; }
-        public string Suit { get; set; }
-
-        public Card()
-        {
-            
-        }
+        public int Number { get; private set; }
+        public Suit Suit { get; private set; }
     }
 }

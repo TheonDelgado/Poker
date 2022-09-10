@@ -7,9 +7,6 @@ namespace Poker
 {
     public class Deck
     {
-        public void CreateDeck()
-        {
-            List<Card> deck = 
-        }
+        
     }
 }

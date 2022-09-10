@@ -1,0 +1,15 @@
+C:\Users\meowm\Github\Poker\Poker\bin\Debug\net6.0\Poker.exe
+C:\Users\meowm\Github\Poker\Poker\bin\Debug\net6.0\Poker.deps.json
+C:\Users\meowm\Github\Poker\Poker\bin\Debug\net6.0\Poker.runtimeconfig.json
+C:\Users\meowm\Github\Poker\Poker\bin\Debug\net6.0\Poker.dll
+C:\Users\meowm\Github\Poker\Poker\bin\Debug\net6.0\ref\Poker.dll
+C:\Users\meowm\Github\Poker\Poker\bin\Debug\net6.0\Poker.pdb
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.csproj.AssemblyReference.cache
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.AssemblyInfoInputs.cache
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.AssemblyInfo.cs
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.csproj.CoreCompileInputs.cache
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.dll
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\ref\Poker.dll
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.pdb
+C:\Users\meowm\Github\Poker\Poker\obj\Debug\net6.0\Poker.genruntimeconfig.cache
