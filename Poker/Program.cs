@@ -19,7 +19,6 @@ namespace Poker
 
 
 
-            
             EndProgram();
         }
 
@@ -39,6 +38,8 @@ namespace Poker
             if(consoleKey.Key == ConsoleKey.Enter)
             {
                 Console.Clear();
+
+                var deck = new Deck();
 
                 Console.WriteLine($"Dealers cards are ");
                 Console.WriteLine($"Your cards are ");
