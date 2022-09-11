@@ -41,6 +41,8 @@ namespace Poker
 
                 var deck = new Deck();
 
+                
+
                 Console.WriteLine($"Dealers cards are ");
                 Console.WriteLine($"Your cards are ");
             }

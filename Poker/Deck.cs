@@ -14,12 +14,7 @@ namespace Poker
             CardList = new List<Card>();
             PopulateDeck();
 
-            foreach(Card card in CardList)
-            {
-                Console.Write(card.Number + " ");
-                Console.Write(card.Suit);
-                Console.WriteLine();
-            }
+            
         }
 
         private void PopulateDeck()
