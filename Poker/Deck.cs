@@ -8,16 +8,25 @@ namespace Poker
     public class Deck
     {
         public List<Card> CardList { get; set; }
+        public Stack<Card> CardStack { get; set; }
 
         public Deck() 
         {
             CardList = new List<Card>();
-            PopulateDeck();
-
-            
+            CardStack = new Stack<Card>();
+            PopulateDeckList();
+            PopulateDeckStack();
         }
 
-        private void PopulateDeck()
+        private void PopulateDeckStack()
+        {
+            foreach(Card card in CardList)
+            {
+                CardStack.Push(card);
+            }
+        }
+
+        private void PopulateDeckList()
         {
             CreateClubs();
             CreateDiamonds();
@@ -30,7 +39,7 @@ namespace Poker
 
         private void CreateHearts()
         {
-            for(int i = 0; i < 13; i++)
+            for(int i = 1; i <= 13; i++)
             {
                 var card = new Card(i, Suit.HEARTS);
                 CardList.Add(card);
@@ -38,7 +47,7 @@ namespace Poker
         }
         private void CreateClubs()
         {
-            for(int i = 0; i < 13; i++)
+            for(int i = 1; i <= 13; i++)
             {
                 var card = new Card(i, Suit.CLUBS);
                 CardList.Add(card);
@@ -46,7 +55,7 @@ namespace Poker
         }
         private void CreateDiamonds()
         {
-            for(int i = 0; i < 13; i++)
+            for(int i = 1; i <= 13; i++)
             {
                 var card = new Card(i, Suit.DIAMONDS);
                 CardList.Add(card);
@@ -54,7 +63,7 @@ namespace Poker
         }
         private void CreateSpades()
         {
-            for(int i = 0; i < 13; i++)
+            for(int i = 1; i <= 13; i++)
             {
                 var card = new Card(i, Suit.SPADES);
                 CardList.Add(card);

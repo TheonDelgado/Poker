@@ -34,20 +34,46 @@ namespace Poker
             Console.WriteLine("Current bet is " + currentBet);
             Console.WriteLine("Press 'Enter' to get your hand");
 
-            ConsoleKeyInfo consoleKey = Console.ReadKey();
+            ConsoleKeyInfo consoleKey = Console.ReadKey();          
             if(consoleKey.Key == ConsoleKey.Enter)
             {
-                Console.Clear();
+                PlayFirstHand();
 
-                var deck = new Deck();
-
-                
-
-                Console.WriteLine($"Dealers cards are ");
-                Console.WriteLine($"Your cards are ");
             }
+        }
 
+        private static void PlayFirstHand()
+        {
+            Console.Clear();
 
+            var deck = new Deck();
+            List<Card> playerHand = new List<Card>();
+            List<Card> dealerHand = new List<Card>();
+
+            Tuple<List<Card>, List<Card>> hands = DealFirstHand(deck, playerHand, dealerHand);
+
+            playerHand = hands.Item1;
+            dealerHand = hands.Item2;
+
+            Console.WriteLine($"Dealers cards are {dealerHand[0].Number}" + " " + dealerHand[0].Suit);
+            Console.WriteLine($"Dealers cards are {dealerHand[1].Number}" + " " + dealerHand[1].Suit);
+            Console.WriteLine($"Your cards are {playerHand[0].Number}" + " " + playerHand[0].Suit);
+            Console.WriteLine($"Your cards are {playerHand[1].Number}" + " " + playerHand[1].Suit);
+        }
+
+        private static Tuple<List<Card>, List<Card>> DealFirstHand(Deck deck, List<Card> playerHand, List<Card> dealerHand)  
+        {
+            Card playerCard1 = deck.CardStack.Pop();
+            Card dealerCard1 = deck.CardStack.Pop();
+            Card playerCard2 = deck.CardStack.Pop();
+            Card dealerCard2 = deck.CardStack.Pop();
+
+            playerHand.Add(playerCard1);
+            playerHand.Add(playerCard2);
+            dealerHand.Add(dealerCard1);
+            dealerHand.Add(dealerCard2);
+
+            return Tuple.Create<List<Card>, List<Card>>(playerHand, dealerHand);
         }
 
         private static void EndProgram()
